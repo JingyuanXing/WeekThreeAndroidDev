@@ -25,14 +25,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        TextView tvId = (TextView) findViewById(R.id.title_view);
 
         //Get the date and time
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy.MM.dd G 'at' HH:mm:ss z");
         String currentDateandTime = sdf.format(new Date());
-
-        //Set view/text
-        tvId.setText( "Todo at "+ currentDateandTime.toString());
     }
 
     @Override
